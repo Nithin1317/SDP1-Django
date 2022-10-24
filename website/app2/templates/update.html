@@ -1,0 +1,9 @@
+<h1>Update Info</h1>
+<form action="updaterecord/{{user.id}}" method="post">
+    {% csrf_token %}
+    FirstName: <input  name="fn" value="{{user.FirstName}}"><br><br>
+    LastName : <input  name="ln" value="{{user.Lastname}}"><br><br>
+    UserName : <input  name="us" value="{{user.Username}}"><br><br>
+    Email    : <input  name="mail" value="{{user.user_mail}}"><br><br>
+    <input type="submit" value="update">
+</form>

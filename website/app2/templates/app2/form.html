@@ -1,0 +1,7 @@
+<h1>Form</h1>
+<form action="{% url 'insert' %}" method="post">
+    {% csrf_token %}
+    Username:<input type="text" name="us" placeholder="Username">
+    Password: <input type="password" name="pass" placeholder="Password">
+    <input type="submit">
+</form>
